@@ -35,7 +35,7 @@ pipeline {
 
             steps {
                 sh """
-                docker build -t joindevops/backned:${appVersion}
+                docker build -t joindevops/backned:${appVersion} .
                 docker images
                 """
             }
