@@ -4,7 +4,7 @@ metadata:
   name: backend
   namespace: expense
 data:
-  DB_HOST: {{ .Values.configMap.db_host }}
+  DB_HOST: {{ .Values.configMap.db_host }}       --Bcoz we are not running database in container, we are running seperately 
 ---
 apiVersion: apps/v1
 kind: Deployment
